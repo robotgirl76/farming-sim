@@ -4,7 +4,7 @@ func enter() -> void:
 	animation_name = &"Idle"
 	super()
 
-func process_input(event: InputEvent) -> void:
+func process_input(_event: InputEvent) -> void:
 	if check_movement():
 		state_return(&"Walk")
 

@@ -26,7 +26,7 @@ func process_input(_event: InputEvent) -> void:
 func process_frame(_delta: float) -> void:
 	pass
 
-func process_physics(delta: float) -> void:
+func process_physics(_delta: float) -> void:
 	pass
 
 func state_return(state_name:StringName) -> void:
