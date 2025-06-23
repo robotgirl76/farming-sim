@@ -1,25 +1,15 @@
 extends State
 
+var _direction:Vector2
+
+func process_frame(_delta: float) -> void:
+	parent.animation_component.handle_move_animation(_direction)
+
 func process_physics(_delta: float) -> void:
-	var direction: Vector2 = Input.get_vector("move_left", "move_right", "move_up", "move_down")
+	_direction = parent.input_component.get_direction_input()
 	
-	if direction == Vector2.ZERO:
+	if _direction == Vector2.ZERO:
 		state_return(&"Idle")
 	
-	if direction.x > 0.1:
-		set_animation(&"HorizontalWalk")
-		parent.flip_player(false)
-	elif direction.x < -0.1:
-		set_animation(&"HorizontalWalk")
-		parent.flip_player(true)
-	elif direction.y < -0.1:
-		set_animation(&"UpWalk")
-		parent.flip_player(false)
-	elif direction.y > 0.1:
-		set_animation(&"DownWalk")
-		parent.flip_player(false)
+	parent.move_component.handle_movement(parent, _direction)
 	
-	parent.move(direction)
-
-func set_animation(animation: StringName) -> void:
-	animation_player.play(animation)

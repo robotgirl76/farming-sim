@@ -1,6 +1,6 @@
 [gd_scene load_steps=32 format=3 uid="uid://dmw2y1ppqolo7"]
 
-[ext_resource type="Script" uid="uid://b5a2v1dldpxml" path="res://scenes/Player/player.gd" id="1_gnt21"]
+[ext_resource type="Script" uid="uid://b5a2v1dldpxml" path="res://player.gd" id="1_gnt21"]
 [ext_resource type="Texture2D" uid="uid://dfk7m2i6mn33p" path="res://assets/player/new asset so far-Sheet.png" id="2_fxtjl"]
 [ext_resource type="Script" uid="uid://bmhc3m2bo4ntw" path="res://scenes/Player/states/state_machine.gd" id="3_ho8ef"]
 [ext_resource type="Script" uid="uid://b50ui5pr22r1o" path="res://scenes/Player/states/idle.gd" id="5_qur7y"]
@@ -273,9 +273,9 @@ script = ExtResource("1_gnt21")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_37hgi")
-animation = &"idle_right"
+animation = &"idle_down"
 autoplay = "idle_down"
-frame_progress = 0.88699
+frame_progress = 0.562791
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0.5, 7.75)

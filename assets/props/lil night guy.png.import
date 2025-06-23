@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bu7gcbrq07f65"
-path="res://.godot/imported/misc.png-18edcef6612d38d809a95e33e06c4bc9.ctex"
+uid="uid://kgbxe4qcdq1k"
+path="res://.godot/imported/lil night guy.png-4e6dcf29cfabb7fda6e96698c4d2a772.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/misc.png"
-dest_files=["res://.godot/imported/misc.png-18edcef6612d38d809a95e33e06c4bc9.ctex"]
+source_file="res://assets/props/lil night guy.png"
+dest_files=["res://.godot/imported/lil night guy.png-4e6dcf29cfabb7fda6e96698c4d2a772.ctex"]
 
 [params]
 
