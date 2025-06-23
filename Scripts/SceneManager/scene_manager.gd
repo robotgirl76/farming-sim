@@ -12,9 +12,12 @@ const level_details: Dictionary = {
 	},
 }
 
-func goto_scene(level_name: StringName) -> void:
+func goto_scene(_level_name: StringName) -> void:
 	current_level = level_details[current_level]
 	var path = current_level[&"scene"]
+	
+	call_deferred("_deferred_goto_scene", path)
+
 
 func _deferred_goto_scene(path: StringName) -> void:
 	var new_scene = load(path)

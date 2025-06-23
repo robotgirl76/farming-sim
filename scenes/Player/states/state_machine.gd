@@ -22,11 +22,11 @@ var get_next_state: State:
 	get:
 		return _next_state
 
-func init(parent: Player, animation_player: AnimationPlayer = null) -> void:
+func init(parent: Player) -> void:
 	for child in get_children():
 		if child is State:
 			_state_list.push_back(child)
-			child._set_params(self, parent, animation_player)
+			child._set_params(self, parent)
 	
 	if not starting_state:
 		starting_state = _state_list[0]

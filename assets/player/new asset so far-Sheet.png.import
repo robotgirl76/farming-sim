@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://qie2novtb7xv"
-path="res://.godot/imported/farming n foraging - all.png-a792ef2d597d740fb5e6c73a2d4e675c.ctex"
+uid="uid://dfk7m2i6mn33p"
+path="res://.godot/imported/new asset so far-Sheet.png-fd52c859be40e13116deddaec892e9d0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/farming n foraging - all.png"
-dest_files=["res://.godot/imported/farming n foraging - all.png-a792ef2d597d740fb5e6c73a2d4e675c.ctex"]
+source_file="res://assets/player/new asset so far-Sheet.png"
+dest_files=["res://.godot/imported/new asset so far-Sheet.png-fd52c859be40e13116deddaec892e9d0.ctex"]
 
 [params]
 

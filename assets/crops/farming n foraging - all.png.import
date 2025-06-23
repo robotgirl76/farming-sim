@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://beciogkyaievi"
-path="res://.godot/imported/sprite sheet.png-ab35bdcb6f5ecb0a2d0e8fc6324ef6ef.ctex"
+uid="uid://qie2novtb7xv"
+path="res://.godot/imported/farming n foraging - all.png-4ac5d17b90ecebaa3d9e17e67783ec38.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/player/sprite sheet.png"
-dest_files=["res://.godot/imported/sprite sheet.png-ab35bdcb6f5ecb0a2d0e8fc6324ef6ef.ctex"]
+source_file="res://assets/crops/farming n foraging - all.png"
+dest_files=["res://.godot/imported/farming n foraging - all.png-4ac5d17b90ecebaa3d9e17e67783ec38.ctex"]
 
 [params]
 

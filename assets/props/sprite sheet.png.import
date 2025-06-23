@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://kgbxe4qcdq1k"
-path="res://.godot/imported/lil night guy.png-a6e543dcee5c038c737500f2e11ae8f8.ctex"
+uid="uid://beciogkyaievi"
+path="res://.godot/imported/sprite sheet.png-aef095f73597eca6bcb49cb67825e388.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/player/lil night guy.png"
-dest_files=["res://.godot/imported/lil night guy.png-a6e543dcee5c038c737500f2e11ae8f8.ctex"]
+source_file="res://assets/props/sprite sheet.png"
+dest_files=["res://.godot/imported/sprite sheet.png-aef095f73597eca6bcb49cb67825e388.ctex"]
 
 [params]
 
