@@ -23,16 +23,16 @@ func handle_move_animation(move_direction: Vector2) -> void:
 	
 	
 	if move_direction.x < 0.0:
-		#animation_player.play(&"HorizontalWalk")
+		animation_player.play(&"walk_left")
 		_last_direction = _Direction.LEFT
 	elif move_direction.x > 0.0:
-		#animation_player.play(&"HorizontalWalk")
+		animation_player.play(&"walk_right")
 		_last_direction = _Direction.RIGHT
 	elif move_direction.y < 0.0:
-		#animation_player.play(&"UpWalk")
+		animation_player.play(&"walk_up")
 		_last_direction = _Direction.UP
 	elif move_direction.y > 0.0:
-		#animation_player.play(&"DownWalk")
+		animation_player.play(&"walk_down")
 		_last_direction = _Direction.DOWN
 
 
