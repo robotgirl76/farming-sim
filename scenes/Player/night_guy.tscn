@@ -437,6 +437,7 @@ script = ExtResource("1_gnt21")
 sprite_frames = SubResource("SpriteFrames_37hgi")
 animation = &"DownWalk"
 autoplay = "Idle"
+frame = 1
 
 [node name="StateMachine" type="Node" parent="."]
 script = ExtResource("3_ho8ef")
