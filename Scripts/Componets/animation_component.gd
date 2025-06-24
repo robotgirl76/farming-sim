@@ -54,3 +54,17 @@ func _handle_horizontal_flip(move_direction: float) -> void:
 		return
 	
 	sprite.flip_h = false if move_direction > 0 else true
+
+func attack_animation() -> void:
+	match _last_direction:
+		_Direction.UP:
+			animation_player.play(&"attack_up")
+		_Direction.DOWN:
+			animation_player.play(&"attack_down")
+		_Direction.LEFT:
+			animation_player.play(&"attack_left")
+		_Direction.RIGHT:
+			animation_player.play(&"attack_right")
+		_:
+			animation_player.play(&"attack_down")
+			
