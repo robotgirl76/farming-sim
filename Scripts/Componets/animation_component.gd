@@ -49,11 +49,6 @@ func _run_idle_animation() -> void:
 		_:
 			animation_player.play(&"idle_down")
 
-func _handle_horizontal_flip(move_direction: float) -> void:
-	if move_direction == 0.0:
-		return
-	
-	sprite.flip_h = false if move_direction > 0 else true
 
 func attack_animation() -> void:
 	match _last_direction:
@@ -67,4 +62,11 @@ func attack_animation() -> void:
 			animation_player.play(&"attack_right")
 		_:
 			animation_player.play(&"attack_down")
-			
+
+
+
+func _handle_horizontal_flip(move_direction: float) -> void:
+	if move_direction == 0.0:
+		return
+	
+	sprite.flip_h = false if move_direction > 0 else true
