@@ -17,6 +17,7 @@ extends CharacterBody2D
 #endregion
 
 func _ready() -> void:
+	damage_component.init_damage_component(self, hurtbox_component)
 	state_machine.init(self)
 
 func _unhandled_input(event: InputEvent) -> void:

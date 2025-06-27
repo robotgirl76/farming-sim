@@ -5,6 +5,6 @@
 [resource]
 script = ExtResource("1_edqvw")
 character_name = &"\"Player\""
-health = 100.0
-stamina = 100.0
+max_health = 100
+max_stamina = 100
 metadata/_custom_type_script = "uid://dtu5o7h6l8r5a"
