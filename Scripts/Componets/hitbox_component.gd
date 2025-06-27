@@ -9,4 +9,4 @@ func _ready():
 
 func _on_hurtbox_entered(hurtbox: HurtboxComponent):
 	if not hurtbox is HurtboxComponent: return
-	hurtbox.hurt.emit(self)
+	hurtbox.emit_hurt(self)
