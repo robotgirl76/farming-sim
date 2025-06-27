@@ -1,0 +1,33 @@
+[gd_scene load_steps=8 format=3 uid="uid://b4rhwcei6suc2"]
+
+[ext_resource type="Script" uid="uid://7ilutjlso5wq" path="res://Scripts/Managers/GameManager/game_manager.gd" id="1_hwd4i"]
+[ext_resource type="Script" uid="uid://cd3lqlforn3if" path="res://Scripts/Managers/UiManager/ui_manager.gd" id="2_bvti3"]
+[ext_resource type="Script" uid="uid://dwgyrc4q8yia" path="res://Scripts/Managers/SceneManager/scene_manager.gd" id="3_5iwlq"]
+[ext_resource type="PackedScene" uid="uid://dmw2y1ppqolo7" path="res://scenes/Player/night_guy.tscn" id="4_m0uee"]
+[ext_resource type="Script" uid="uid://bsnsyi624qsto" path="res://Scripts/Managers/AudioManager/audio_manager.gd" id="5_4xjl7"]
+[ext_resource type="Script" uid="uid://cfk71aloaw2ap" path="res://Scripts/Componets/hitbox_component.gd" id="6_v4lrc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wqm07"]
+
+[node name="GameManager" type="Node"]
+script = ExtResource("1_hwd4i")
+
+[node name="UIManager" type="CanvasLayer" parent="."]
+script = ExtResource("2_bvti3")
+
+[node name="SceneManager" type="Node" parent="."]
+script = ExtResource("3_5iwlq")
+
+[node name="NightGuy" parent="SceneManager" instance=ExtResource("4_m0uee")]
+
+[node name="HitboxComponent" type="Area2D" parent="SceneManager"]
+script = ExtResource("6_v4lrc")
+metadata/_custom_type_script = "uid://cfk71aloaw2ap"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SceneManager/HitboxComponent"]
+position = Vector2(58, 0)
+shape = SubResource("RectangleShape2D_wqm07")
+debug_color = Color(4.33177e-06, 0.641309, 0.336371, 0.42)
+
+[node name="AudioManager" type="Node" parent="."]
+script = ExtResource("5_4xjl7")

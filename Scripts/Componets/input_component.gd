@@ -6,3 +6,6 @@ func get_direction_input() -> Vector2:
 
 func get_attack_input() -> bool:
 	return Input.is_action_just_pressed("attack")
+
+func get_run_input() -> bool:
+	return Input.is_action_pressed("run")
