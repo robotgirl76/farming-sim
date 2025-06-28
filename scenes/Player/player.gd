@@ -1,14 +1,23 @@
-class_name Player extends CharacterBody2D
+class_name Player 
+extends CharacterBody2D
+
 
 @onready var state_machine: StateMachine = $StateMachine
+
+#region Resources
+@export var stats: Resource
+#endregion
 
 #region Components
 @onready var input_component: InputComponent = %InputComponent
 @onready var move_component: MovementComponent = %MovementComponent
 @onready var animation_component: AnimationComponent = %AnimationComponent
-#endregion Componets
-var health: float = 6
+@onready var damage_component: DamageComponent = %DamageComponent
+@onready var hurtbox_component: HurtboxComponent = %HurtboxComponent
+#endregion
+
 func _ready() -> void:
+	damage_component.init_damage_component(self, hurtbox_component)
 	state_machine.init(self)
 
 func _unhandled_input(event: InputEvent) -> void:
@@ -20,8 +29,3 @@ func _process(delta: float) -> void:
 func _physics_process(delta: float) -> void:
 	state_machine.process_physics(delta)
 	move_and_slide()
-func take_damage(weapon_damage: float):
-	$NightGuy/animationplayer.play("take_damage")
-	health -= weapon_damage
-	if health <= 0.0:
-		queue_free()

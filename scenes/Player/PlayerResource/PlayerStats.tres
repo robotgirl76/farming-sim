@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Stats" load_steps=2 format=3 uid="uid://dfjq872do2ast"]
+
+[ext_resource type="Script" uid="uid://dtu5o7h6l8r5a" path="res://Scripts/Resources/Stats.gd" id="1_edqvw"]
+
+[resource]
+script = ExtResource("1_edqvw")
+character_name = &"\"Player\""
+max_health = 100
+max_stamina = 100
+metadata/_custom_type_script = "uid://dtu5o7h6l8r5a"
